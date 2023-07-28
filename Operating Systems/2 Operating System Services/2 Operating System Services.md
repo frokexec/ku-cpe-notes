@@ -1,27 +1,29 @@
 Table of Contents
 
-1. [Operating System Services](#operating-system-services)
-2. [System Calls](#system-calls)
-	1. [System Calls Example](#system-calls-example)
-	2. [API - System Call - OS Relationship](#api---system-call---os-relationship)
-	3. [System Call Parameter Passing](#system-call-parameter-passing)
-	4. [Types of System Calls](#types-of-system-calls)
-3. [System Services](#system-services)
-4. [Linkers and Loaders](#linkers-and-loaders)
-5. [Why Applications are Operating System Specific](#why-applications-are-operating-system-specific)
-	1. [Application Binary Interface (ABI)](#application-binary-interface-abi)
-6. [Design and Implementation](#design-and-implementation)
-7. [Policy and Mechanism](#policy-and-mechanism)
-8. [Operating System Structure](#operating-system-structure)
-	1. [Monolithic Structure](#monolithic-structure)
-	2. [Microkernel *](#microkernel-)
-	3. [Hybrid](#hybrid)
-9. [System Boot](#system-boot)
-10. [OS Debugging](#os-debugging)
-	1. [Performance Tuning](#performance-tuning)
-	2. [Tracing (follow)](#tracing-follow)
-
 # 2 Operating System Services
+
+Table of Contents
+
+1. [Operating System Services](#Operating%20System%20Services)
+2. [System Calls](#System%20Calls)
+	1. [System Calls Example](#System%20Calls%20Example)
+	2. [API - System Call - OS Relationship](#API%20-%20System%20Call%20-%20OS%20Relationship)
+	3. [System Call Parameter Passing](#System%20Call%20Parameter%20Passing)
+	4. [Types of System Calls](#Types%20of%20System%20Calls)
+3. [System Services](#System%20Services)
+4. [Linkers and Loaders](#Linkers%20and%20Loaders)
+5. [Why Applications are Operating System Specific](#Why%20Applications%20are%20Operating%20System%20Specific)
+	1. [Application Binary Interface (ABI)](#Application%20Binary%20Interface%20(ABI))
+6. [Design and Implementation](#Design%20and%20Implementation)
+7. [Policy and Mechanism](#Policy%20and%20Mechanism)
+8. [Operating System Structure](#Operating%20System%20Structure)
+	1. [Monolithic Structure](#Monolithic%20Structure)
+	2. [Microkernel *](#Microkernel%20*)
+	3. [Hybrid](#Hybrid)
+9. [System Boot](#System%20Boot)
+10. [OS Debugging](#OS%20Debugging)
+	1. [Performance Tuning](#Performance%20Tuning)
+	2. [Tracing (follow)](#Tracing%20(follow))
 
 ## Operating System Services
 

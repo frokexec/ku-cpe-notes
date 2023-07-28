@@ -1,8 +1,8 @@
 {
-  "minimumDepth": 2,
+  "minimumDepth": 1,
   "maximumDepth": 6,
   "listStyle": "number",
   "useMarkdown": true,
-  "githubCompat": true,
+  "githubCompat": false,
   "title": "Table of Contents"
 }
