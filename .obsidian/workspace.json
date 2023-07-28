@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Operating Systems/3 Processes/3 Processes.md",
+                "file": "Data Communication/04 Analog/04 Analog.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Operating Systems/3 Processes/3 Processes.md",
+                "file": "Data Communication/04 Analog/04 Analog.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Operating Systems/3 Processes/3 Processes.md",
+                "file": "Data Communication/04 Analog/04 Analog.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Operating Systems/3 Processes/3 Processes.md"
+                "file": "Data Communication/04 Analog/04 Analog.md"
               }
             }
           },

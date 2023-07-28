@@ -1,3 +1,36 @@
+Table of Contents
+
+1. [Process Concept](#process-concept)
+	1. [Process in Memory](#process-in-memory)
+	2. [Process State](#process-state)
+	3. [Process Control Block (PCB)](#process-control-block-pcb)
+		1. [Threads](#threads)
+	4. [Process Scheduling](#process-scheduling)
+	5. [Representation of Process Scheduling](#representation-of-process-scheduling)
+	6. [CPU Switch From Process to Process](#cpu-switch-from-process-to-process)
+	7. [Context Switch](#context-switch)
+2. [Operation on Processes](#operation-on-processes)
+	1. [Process Creation](#process-creation)
+		1. [Resource sharing options](#resource-sharing-options)
+		2. [Execution option](#execution-option)
+		3. [Address space](#address-space)
+		4. [Tree or processes in Linux](#tree-or-processes-in-linux)
+	2. [Process Termination](#process-termination)
+		1. [Zombie Process](#zombie-process)
+		2. [Orphan Process](#orphan-process)
+3. [Interprocess Communication](#interprocess-communication)
+	1. [Producer-Consumer Problem](#producer-consumer-problem)
+	2. [IPC - Shared Memory](#ipc---shared-memory)
+	3. [What about Filling all the Buffers?](#what-about-filling-all-the-buffers)
+	4. [IPC - Message Passing](#ipc---message-passing)
+	5. [Implementation of Communication Link](#implementation-of-communication-link)
+	6. [Direct Communication](#direct-communication)
+	7. [Indirect Communication](#indirect-communication)
+	8. [Synchronization](#synchronization)
+		1. [Blocking](#blocking)
+		2. [Non-blocking](#non-blocking)
+	9. [Buffering](#buffering)
+
 # 3 Processes
 
 ## Process Concept
