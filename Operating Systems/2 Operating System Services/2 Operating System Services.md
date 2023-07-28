@@ -1,7 +1,3 @@
----
-date created: 2023-07-19 17:38
----
-
 # Operating System Services
 
 - User interface

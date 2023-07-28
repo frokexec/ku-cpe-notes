@@ -1,8 +1,3 @@
----
-date created: 2023-07-20 09:14
-date updated: 2023-07-20 10:25
----
-
 # Process Concept
 
 Process - a program in executing; process execution must progress in sequential fashion

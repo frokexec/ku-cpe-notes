@@ -1,7 +1,3 @@
----
-date created: 2023-07-25 10:07
----
-
 ## Analog Conversion
 
 - D-A - **Digital data** to **bandpass analog signal**

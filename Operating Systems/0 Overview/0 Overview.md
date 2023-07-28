@@ -1,7 +1,3 @@
----
-date created: 2023-07-16 19:55
----
-
 # General Model of a Computer
 
 User <-> Application <-> Operating System <-> Hardware

@@ -1,8 +1,3 @@
----
-date created: 2023-07-16 19:55
-date updated: 2023-07-19 16:34
----
-
 # What is an Operating System
 
 Intermediary between a user of a computer and the computer hardware
