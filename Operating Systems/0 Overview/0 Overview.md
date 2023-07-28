@@ -3,27 +3,27 @@
 User <-> Application <-> Operating System <-> Hardware
 
 - User -> Application
-  How does the user talk to an application?
+	How does the user talk to an application?
 
 - Application -> OS
-  How does this application interact with the OS?
+	How does this application interact with the OS?
 
 - OS -> Hardware
-  How does the OS interact with the hardware?
+	How does the OS interact with the hardware?
 
 - Hardware -> OS
-  How does the hardware tell the OS that something is done or needs attention?
+	How does the hardware tell the OS that something is done or needs attention?
 
 - OS -> Application
-  How does the OS tell, send data to, or otherwise interrupt the application?
+	How does the OS tell, send data to, or otherwise interrupt the application?
 
 - Application -> User
-  How does the application deliver it back to the user?
+	How does the application deliver it back to the user?
 
 # How a computer starts?
 
 BIOS(POST) -> MBR/GPT -> GRUB -> Kernel -> Init -> RunLevel
-`OS-Independent`         |           `OS-Dependent (Linux)`
+`OS-Independent` | `OS-Dependent (Linux)`
 
 # What is kernel?
 

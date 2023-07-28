@@ -3,6 +3,7 @@
 Process - a program in executing; process execution must progress in sequential fashion
 
 Multiple parts
+
 - Program code - text section
 - Including PC and processor registers
 - Stack - containing temporary data
@@ -122,12 +123,14 @@ Parent may terminate the execution of children processes using `abort()` system 
 - The parent is exiting (**cascading termination**)
 
 ### Zombie Process
+
 A process that has completed its task but the parent is not reading the process state. In the other words, if no parent waiting process is a **zombie**
 
 ### Orphan Process
+
 If parent terminated without invoking `wait()`, process is an **orphan**
 
-See https://www.geeksforgeeks.org/difference-between-zombie-orphan-and-daemon-processes/
+See <https://www.geeksforgeeks.org/difference-between-zombie-orphan-and-daemon-processes/>
 
 # Interprocess Communication
 
@@ -150,12 +153,13 @@ One solution to the producer–consumer problem uses shared memory.
 To allow producer and consumer processes to run concurrently, we must have available a buffer of items that can be filled by the producer and emptied by the consumer.
 
 Two variations:
+
 - unbounded-buffer (no practical limit on the size of buffer)
-  - producer never waits
-  - consumer waits if there is **no buffer to consume**
+	- producer never waits
+	- consumer waits if there is **no buffer to consume**
 - bounded-buffer
-  - producer must wait if all buffers are full
-  - consumer waits if there is no buffer to consume
+	- producer must wait if all buffers are full
+	- consumer waits if there is no buffer to consume
 
 ## IPC - Shared Memory
 
@@ -165,7 +169,7 @@ An area of memory shared among the processes that wish to communicate
 
 ## What about Filling all the Buffers?
 
-Suppose that we wanted to provide a solution to the consumer- producer problem that fills all the buffers.
+Suppose that we wanted to provide a solution to the consumerproducer problem that fills all the buffers.
 
 We can do so by having an integer **counter** that keeps track of the number of full buffers.
 
@@ -178,16 +182,19 @@ We can do so by having an integer **counter** that keeps track of the number of 
 Processes communicate with each other without resorting to shared variables
 
 Two operations:
+
 - `send(message)`
 - `receive(message)`
 
 The message size can be fixed or variable
 
 If processes `P` and `Q` which to communicate, they need to:
+
 - Establish a **communication link** between them
 - Exchange messages via send/receive
 
 ## Implementation of Communication Link
+
 - Physical
 	- Shared memory
 	- Hardware bus
@@ -198,22 +205,26 @@ If processes `P` and `Q` which to communicate, they need to:
 	- Automatic or explicit buffering
 
 ## Direct Communication
+
  Processes must name each other explicitly:
 	- `send(P,message)`
 	- `receive(Q,message)`
 
 Properties of communication link
+
 - A link is established automatically between every pair of processes that want to communicate
 - A link is associated with **exactly two processes**
 - Between each pair of processes, there exists exactly one link
- 
 
 ## Indirect Communication
+
 Messages are directed and received from mailboxes or ports
+
 - Each mailbox has a unique id
 - Processes can communicate only if they share a mailbox
 
 Properties of communication link
+
 - A link is established between a pair of processes only if both members of the pair have a shared mailbox
 - A link may be associated with more than two processes
 - Between each pair of communicating processes, a number of different links may exist, with each link corresponding to one mailbox
@@ -221,14 +232,17 @@ Properties of communication link
 ## Synchronization
 
 ### Blocking
+
 - Blocking send - the sender is blocked until the message is revived
 - Blocking receive - the receiver is blocked until a message is available
 
 ### Non-blocking
+
 - Non-blocking send - the sender sends the message and continue
 - Non-blocking receive - the receiver receives a valid message or null message
 
 ## Buffering
+
 Queue of messages attached to the link
 
 - Zero capacity - no messages are queued on a link. Sender must wait for receive (rendezvous)

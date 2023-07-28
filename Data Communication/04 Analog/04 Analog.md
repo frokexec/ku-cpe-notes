@@ -1,15 +1,15 @@
-## Analog Conversion
+# Analog Conversion
 
 - D-A - **Digital data** to **bandpass analog signal**
 - A-A - **Low-pass analog signal** to **bandpass analog signal**
 
-### Digital - Analog - Digital Conversion
+## Digital - Analog - Digital Conversion
 
 - Uses **modem**
 
 ![[Pasted image 20230725092020.png]]
 
-## Carrier Signals
+# Carrier Signals
 
 aka Carrier Frequency
 a high-frequency signal acting as a base for information signal
@@ -19,7 +19,7 @@ a high-frequency signal acting as a base for information signal
 
 ![[Pasted image 20230725092011.png]]
 
-## Pure sine
+# Pure sine
 
 - Bandwidth = 0
 - 1 discrete peak in freq domain
@@ -28,12 +28,12 @@ a high-frequency signal acting as a base for information signal
 
 - Sine wave is characterized by amplitude, freq, and phase
 - Three mechanisms
-  - Amplitude Shift Keying
-    - สะบัด amp ให้มี bandwidth
-  - Frequency Shift Keying
-    - สะบัด freq ให้มี bandwidth
-  - Phase Shift Keying
-    - สะบัด freq ให้มี bandwidth
+	- Amplitude Shift Keying
+		- สะบัด amp ให้มี bandwidth
+	- Frequency Shift Keying
+		- สะบัด freq ให้มี bandwidth
+	- Phase Shift Keying
+		- สะบัด freq ให้มี bandwidth
 - All to Quadrature Amplitude Modulation
 
 ![[Pasted image 20230725092725.png]]
@@ -58,18 +58,16 @@ r = N * (1/r) = 8000/1000 = 8 data elems
 ## Bandwidth and Carrier Signal
 
 - Bandwidth
-  - ... except for FSK
+	- … except for FSK
 - Carrier Signal
-  - ....
+	- ….
 
 ## Amplitude Shift Keying
 
 สะบัดที่ Amplitude
 
 - อ่อนต่อ noise
-
 - OOK: On off keying
-
 - Binary ASK
 
 ![[Pasted image 20230725094546.png]]
@@ -117,11 +115,13 @@ r = N * (1/r) = 8000/1000 = 8 data elems
 ![[Pasted image 20230725100625.png]]
 ![[Pasted image 20230725101027.png]]
 
-## QPSK Inplementation *
+## QPSK Implementation *
+
 ![[Pasted image 20230725101037.png]]
 ![[Pasted image 20230725101046.png]]
 
 ## Constellation Diagram
+
 - Constellation (กลุ่มดาว)
 - บอก Amplitude and Phase
 
@@ -131,6 +131,7 @@ r = N * (1/r) = 8000/1000 = 8 data elems
 # Analog to Analog Conversion
 
 ## Amplitude Modulation
+
 ![[Pasted image 20230725112254.png]]
 ![[Pasted image 20230725112307.png]]
 

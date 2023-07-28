@@ -13,16 +13,16 @@ Intermediary between a user of a computer and the computer hardware
 ## Components
 
 - Hardware
-  - CPU
-  - Memory
-  - I/O devices
+	- CPU
+	- Memory
+	- I/O devices
 - Operating system
-  - Controls and coordinates use of hardware among various applications and users
+	- Controls and coordinates use of hardware among various applications and users
 - Application programs
 - Users
-  - People
-  - Machines
-  - Other computers
+	- People
+	- Machines
+	- Other computers
 
 # Abstract View of Components of Computer
 
@@ -42,15 +42,15 @@ Born when fixed use computers for military become more general purpose and neede
 - **No universally accepted definition**.
 - "The one program running at all times on the computer" is the **kernel**
 - Everything else is either
-  - A system program
-  - An application program (not associated with the OS)
+	- A system program
+	- An application program (not associated with the OS)
 
 # Computer System Organization
 
 - Computer-system operation
-  - One or more CPUs, device controllers connect through common **bus** providing access to shared memory
-  - Concurrent executing of CPUs and devices competing for memory cycles
-  ![[Pasted image 20230716202739.png]]
+	- One or more CPUs, device controllers connect through common **bus** providing access to shared memory
+	- Concurrent executing of CPUs and devices competing for memory cycles
+	![[Pasted image 20230716202739.png]]
 
 # Computer System Operation
 
@@ -131,12 +131,12 @@ Exceptions can be further broken down into sub-categories:
 ## Two methods for handling I/O
 
 - Control return to user program **only upon I/O completion**
-  - Wait instruction idles the CPU until the next interrupt
-  - Wait loop
-  - No simultaneous I/O processing
+	- Wait instruction idles the CPU until the next interrupt
+	- Wait loop
+	- No simultaneous I/O processing
 - Control return to user program **without waiting for I/O completion**
-  - **System call** - request to the OS to allow user to wait for I/O completion
-  - **Device-status table** contains entry for each I/O device indicating its type, address, and state
+	- **System call** - request to the OS to allow user to wait for I/O completion
+	- **Device-status table** contains entry for each I/O device indicating its type, address, and state
 
 # Storage Structure
 
@@ -182,13 +182,13 @@ if a computer wants to send data from system memory to a printer, it issues a DM
 - Kernel loads
 - Starts **system daemons**
 - Kernel **interrupt driven** (hardware and software)
-  - Hardware interrupt by one of the devices
-  - Software interrupt (**exception** or **trap**):
-    - Software error
-    - Request for OS service - **system call**
-    - Other process problems
-      - infinite loop
-      - processes modifying each other or the OS
+	- Hardware interrupt by one of the devices
+	- Software interrupt (**exception** or **trap**):
+		- Software error
+		- Request for OS service - **system call**
+		- Other process problems
+			- infinite loop
+			- processes modifying each other or the OS
 
 # System Call
 
@@ -243,7 +243,8 @@ Multi-tasking is a logical extension of multi-programming. Multitasking is the a
 
 Dual-mode operation allows OS to protect itself and other
 system components
-• User mode and kernel mode
+
+- User mode and kernel mode
 
 Some instructions designated as privileged, only executable in kernel mode
 
@@ -313,8 +314,8 @@ The OS is responsible for the following activities in connection with process ma
 ## Caching
 
 - Cache smaller than storage being cached
-  - Cache management important design problem
-  - Cache size and replacement policy
+	- Cache management important design problem
+	- Cache size and replacement policy
 
 ## Characteristics of Various Types of Storage
 
@@ -325,12 +326,11 @@ The OS is responsible for the following activities in connection with process ma
 ![[Pasted image 20230719153816.png]]
 
 - Multitasking environments must be careful to use most recent value, no matter where it is stored in the storage hierarchy
-
 - Multiprocessor environment must provide **cache coherency** (shared memory hierarchy) in hardware such that all CPUs have the most recent value in their cache
 
 # I/O Subsystem
 
-aka I/O system, is a critical component of OS responsible for managing communication between CPU and external devices .
+aka I/O system, is a critical component of OS responsible for managing communication between CPU and external devices.
 
 ## I/O Subsystem components
 
@@ -389,16 +389,17 @@ It is a specialized type of operating system designed to manage and control netw
 - Increased throughput
 - Economy of scale
 - Increased reliability
-  - Asymmetric Multiprocessing - each processor is assigned a specie task.
-  - Symmetric Multiprocessing - each processor performs all tasks.
-    - ![[Pasted image 20230719162140.png]]
+	- Asymmetric Multiprocessing - each processor is assigned a specie task.
+	- Symmetric Multiprocessing - each processor performs all tasks.
+		- ![[Pasted image 20230719162140.png]]
 
 ### Dual-Core
 
 - Multi-chip and multi-core
-  ![[Pasted image 20230719162349.png]]
-  
+	![[Pasted image 20230719162349.png]]
+
 ## Multiprocessors Keywords
+
 - NUMA
 
 ## Clustered Systems
@@ -409,14 +410,13 @@ Like multiprocessor systems, but multiple systems working together
 
 - Usually sharing storage via a **storage-area network (SAN)**
 - Provides a **high-availability** service which survives failures
-  - **Asymmetric clustering** - has one machine in hot-standby mode while other is running the applications
-    - hot-standby host machine does nothing but monitor the active server
-  - **Symmetric clustering** - has multiple nodes running applications, monitoring each other
+	- **Asymmetric clustering** - has one machine in hot-standby mode while other is running the applications
+		- hot-standby host machine does nothing but monitor the active server
+	- **Symmetric clustering** - has multiple nodes running applications, monitoring each other
 - Some clusters are for HPC (applications must be written to use parallelization)
 - Some have distributed lock manager to avoid conflicting operations
 
 ![[Pasted image 20230719163429.png]]
-
 
 # Computing Environments
 
@@ -433,7 +433,7 @@ Like multiprocessor systems, but multiple systems working together
 ## Peer-to-Peer Computing
 
 ![[Pasted image 20230719164411.png]]
- 
+
 - Decentralized
 - Skype
 
@@ -457,10 +457,10 @@ Like multiprocessor systems, but multiple systems working together
 
 # Free and Open-Source Operating Systems
 
-
 # Practice Exercises
+
 1. What are the three main purposes of an operating system?
-2. We have stressed the need for an operating system to make efficient use of the computing hardware. 
+2. We have stressed the need for an operating system to make efficient use of the computing hardware.
 3. When is it appropriate for the operating system to forsake this principle and to “waste” resources? Why is such a system not really wasteful?
 4. What is the main difficulty that a programmer must overcome in writing an operating system for a real-time environment?
 5. Keeping in mind the various definitions of operating system, consider whether the operating system should include applications such as web browsers and mail programs. Argue both that it should and that it should not, and support your answers.

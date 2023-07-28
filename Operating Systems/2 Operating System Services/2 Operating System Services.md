@@ -18,9 +18,9 @@ Programming interface to the services provided by the OS
 
 - Typically written in a high-level language (C or C++)
 - Mostly accessed by programs via a high-level API rather than direct system call use
-  - Win32 API
-  - POSIX
-  - Java API
+	- Win32 API
+	- POSIX
+	- Java API
 
 The caller need know nothing about how the system call is implemented
 
@@ -30,7 +30,7 @@ The caller need know nothing about how the system call is implemented
 ## System Calls Example
 
 - Copy
-  ![[Pasted image 20230719171145.png]]
+	![[Pasted image 20230719171145.png]]
 
 ## API - System Call - OS Relationship
 
@@ -39,9 +39,9 @@ The caller need know nothing about how the system call is implemented
 ## System Call Parameter Passing
 
 - Simplest: pass the parameters in registers
-  - In some cases, may be more parameters than registers
+	- In some cases, may be more parameters than registers
 - Parameters stored in a block, or table, in memory, and address of block passed as a parameter in a register
-  - This approach taken by Linux and Solaris
+	- This approach taken by Linux and Solaris
 - Parameters placed, or **pushed**, onto the **stack** by the program and **popped** off the stack by the operating system
 
 ![[Pasted image 20230719172709.png]]
@@ -49,40 +49,40 @@ The caller need know nothing about how the system call is implemented
 ## Types of System Calls
 
 - Process control
-  - create process, terminate process
-  - end, abort
-  - load, execute
-  - get process attributes, set process attributes
-  - wait for time
-  - wait event, signal event
-  - allocate and free memory
-  - dump memory if error
-  - debugger
-  - locks (managing access to shared data between processes)
+	- create process, terminate process
+	- end, abort
+	- load, execute
+	- get process attributes, set process attributes
+	- wait for time
+	- wait event, signal event
+	- allocate and free memory
+	- dump memory if error
+	- debugger
+	- locks (managing access to shared data between processes)
 - File management
-  - create file, delete file
-  - open, close
-  - read, write, reposition
-  - get and set file attributes
+	- create file, delete file
+	- open, close
+	- read, write, reposition
+	- get and set file attributes
 - Device management
-  - request and release device
-  - read, write, reposition
-  - get and set device attributes
-  - logically attach or detach devices
+	- request and release device
+	- read, write, reposition
+	- get and set device attributes
+	- logically attach or detach devices
 - Information maintenance
-  - time and date
-  - system data
-  - process, file or device attributes
+	- time and date
+	- system data
+	- process, file or device attributes
 - Communications
-  - communication connection
-  - send, receive messages
-  - shared-memory model
-  - transfer status information
-  - attach and detach remote devices
+	- communication connection
+	- send, receive messages
+	- shared-memory model
+	- transfer status information
+	- attach and detach remote devices
 - Protection
-  - access to resources
-  - permissions
-  - allow and deny user accesses
+	- access to resources
+	- permissions
+	- allow and deny user accesses
 
 | Types of System Calls   | Windows                                                                       | Linux                                        |
 | ----------------------- | ----------------------------------------------------------------------------- | -------------------------------------------- |
@@ -94,6 +94,7 @@ The caller need know nothing about how the system call is implemented
 | Protection              | SetFileSecurity() InitializeSecurityDescriptor() SetSecurityDescriptorGroup() | chmod() umask() chown()                      |
 
 # System Services
+
 - File manipulation
 	- Text editors to create and modify files
 	- Special commands to search
@@ -113,18 +114,20 @@ The caller need know nothing about how the system call is implemented
 - Application programs
 
 # Linkers and Loaders
+
 Source code compiled into object files designed to be loaded into any physical memory location – relocatable object file
 
 ![[Pasted image 20230719175040.png]]
 
 **Linker** combines object file into **single binary executable** file (with libs)
 **Loader** loads executable files into memory
+
 - **Relocation** assigns final addresses to program parts and adjusts code and data in program to match those addresses
 
 # Why Applications are Operating System Specific
 
 App compiled on one system usually not executable on other OS.
-Each OS provides its own **unique system calls** 
+Each OS provides its own **unique system calls**
 
 ## Application Binary Interface (ABI)
 
@@ -132,13 +135,13 @@ An interface between two binary program modules. Often, one of these modules is 
 
 # Design and Implementation
 
-- User goals – operating system should be convenient to use, easy to learn, reliable, safe, and fast
-- System goals – operating system should be easy to design, implement, and maintain, as well as flexible, reliable, error-free, and efficient
+- User goals–operating system should be convenient to use, easy to learn, reliable, safe, and fast
+- System goals–operating system should be easy to design, implement, and maintain, as well as flexible, reliable, error-free, and efficient
 
 # Policy and Mechanism
 
 - Policy: What needs to be done?
-- Mechanism: How to do something? 
+- Mechanism: How to do something?
 
 # Operating System Structure
 
@@ -169,19 +172,23 @@ Move as much from kernel to the user space
 ## Hybrid
 
 # System Boot
+
 - Small pieces of code - bootstrap loader, BIOS, stored in ROM or EEPROM locates the kernel, loads it into memory, and start it
 - Sometimes two-step process where boot block at fixed location loaded by ROM coded, which loads bootstrap loader from disk
 - Modern systems use UEFI instead of BIOS
 
 # OS Debugging
+
 - Core dump
 	from application
 - Crash dump
 	from OS
- 
+
 ## Performance Tuning
+
  - Trace listing
  - Profiling
 
 ## Tracing (follow)
+
 Collects data for a specific event, such as steps involved in a system call invocation
