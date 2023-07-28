@@ -3,19 +3,12 @@
 Process - a program in executing; process execution must progress in sequential fashion
 
 Multiple parts
-
 - Program code - text section
-
 - Including PC and processor registers
-
 - Stack - containing temporary data
-
 - Data section - containing global vars
-
 - Heap - containing memory dynamically allocated during run-time
-
 - Program is passive entity
-
 - Process is active entity
 
 ## Process in Memory
