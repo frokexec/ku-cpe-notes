@@ -1,4 +1,6 @@
-# Operating System Services
+# 2 Operating System Services
+
+## Operating System Services
 
 - User interface
 - Program execution
@@ -12,7 +14,7 @@
 
 ![[Pasted image 20230719170703.png]]
 
-# System Calls
+## System Calls
 
 Programming interface to the services provided by the OS
 
@@ -27,16 +29,16 @@ The caller need know nothing about how the system call is implemented
 - Just needs to obey API and understand what OS will do as a result call
 - Most details of OS interface hidden from programmer by API
 
-## System Calls Example
+### System Calls Example
 
 - Copy
 	![[Pasted image 20230719171145.png]]
 
-## API - System Call - OS Relationship
+### API - System Call - OS Relationship
 
 ![[Pasted image 20230719171747.png]]
 
-## System Call Parameter Passing
+### System Call Parameter Passing
 
 - Simplest: pass the parameters in registers
 	- In some cases, may be more parameters than registers
@@ -46,7 +48,7 @@ The caller need know nothing about how the system call is implemented
 
 ![[Pasted image 20230719172709.png]]
 
-## Types of System Calls
+### Types of System Calls
 
 - Process control
 	- create process, terminate process
@@ -93,7 +95,7 @@ The caller need know nothing about how the system call is implemented
 | Communication           | CreatePipe()  <br>CreateFileMapping()  <br>MapViewOfFile()                    | pipe()  <br>shmget()  <br>mmap()             |
 | Protection              | SetFileSecurity() InitializeSecurityDescriptor() SetSecurityDescriptorGroup() | chmod() umask() chown()                      |
 
-# System Services
+## System Services
 
 - File manipulation
 	- Text editors to create and modify files
@@ -113,7 +115,7 @@ The caller need know nothing about how the system call is implemented
 	- services, subsystems, daemons
 - Application programs
 
-# Linkers and Loaders
+## Linkers and Loaders
 
 Source code compiled into object files designed to be loaded into any physical memory location – relocatable object file
 
@@ -124,30 +126,30 @@ Source code compiled into object files designed to be loaded into any physical m
 
 - **Relocation** assigns final addresses to program parts and adjusts code and data in program to match those addresses
 
-# Why Applications are Operating System Specific
+## Why Applications are Operating System Specific
 
 App compiled on one system usually not executable on other OS.
 Each OS provides its own **unique system calls**
 
-## Application Binary Interface (ABI)
+### Application Binary Interface (ABI)
 
 An interface between two binary program modules. Often, one of these modules is a library or operating system facility,
 
-# Design and Implementation
+## Design and Implementation
 
 - User goals–operating system should be convenient to use, easy to learn, reliable, safe, and fast
 - System goals–operating system should be easy to design, implement, and maintain, as well as flexible, reliable, error-free, and efficient
 
-# Policy and Mechanism
+## Policy and Mechanism
 
 - Policy: What needs to be done?
 - Mechanism: How to do something?
 
-# Operating System Structure
+## Operating System Structure
 
 General purpose is a very large program
 
-## Monolithic Structure
+### Monolithic Structure
 
 - Separated in two parts
 	- System
@@ -160,7 +162,7 @@ Linux System Structure
 
 ![[Pasted image 20230720063211.png]]
 
-## Microkernel *
+### Microkernel *
 
 Move as much from kernel to the user space
 
@@ -169,26 +171,26 @@ Move as much from kernel to the user space
 
 ![[Pasted image 20230720063622.png]]
 
-## Hybrid
+### Hybrid
 
-# System Boot
+## System Boot
 
 - Small pieces of code - bootstrap loader, BIOS, stored in ROM or EEPROM locates the kernel, loads it into memory, and start it
 - Sometimes two-step process where boot block at fixed location loaded by ROM coded, which loads bootstrap loader from disk
 - Modern systems use UEFI instead of BIOS
 
-# OS Debugging
+## OS Debugging
 
 - Core dump
 	from application
 - Crash dump
 	from OS
 
-## Performance Tuning
+### Performance Tuning
 
  - Trace listing
  - Profiling
 
-## Tracing (follow)
+### Tracing (follow)
 
 Collects data for a specific event, such as steps involved in a system call invocation

@@ -1,16 +1,18 @@
-# What is an Operating System
+# 1 Introduction
+
+## What is an Operating System
 
 Intermediary between a user of a computer and the computer hardware
 
-## OS goals
+### OS goals
 
 - Execute user programs and make solving user problem easier
 - Make the computer system convenient to use
 - Use the computer hardware in an efficient manner
 
-# Computer System Structure
+## Computer System Structure
 
-## Components
+### Components
 
 - Hardware
 	- CPU
@@ -24,20 +26,20 @@ Intermediary between a user of a computer and the computer hardware
 	- Machines
 	- Other computers
 
-# Abstract View of Components of Computer
+## Abstract View of Components of Computer
 
 ![[Pasted image 20230716195550.png]]
 
-# What Operating Systems Do
+## What Operating Systems Do
 
 It manages all of the software and hardware on the computer. It performs basic tasks such as file, memory and process management, handling I/O and controlling peripheral devices.
 
-# Defining Operating Systems
+## Defining Operating Systems
 
 Present in toasters through ships, spacecraft, game machines, TVs and industrial control systems.
 Born when fixed use computers for military become more general purpose and needed resource management and program control.
 
-# Operating System Definition
+## Operating System Definition
 
 - **No universally accepted definition**.
 - "The one program running at all times on the computer" is the **kernel**
@@ -45,14 +47,14 @@ Born when fixed use computers for military become more general purpose and neede
 	- A system program
 	- An application program (not associated with the OS)
 
-# Computer System Organization
+## Computer System Organization
 
 - Computer-system operation
 	- One or more CPUs, device controllers connect through common **bus** providing access to shared memory
 	- Concurrent executing of CPUs and devices competing for memory cycles
 	![[Pasted image 20230716202739.png]]
 
-# Computer System Operation
+## Computer System Operation
 
 - I/O devices and the CPU can **execute concurrently**
 - Each device controller is in charge of a particular device type
@@ -62,26 +64,26 @@ Born when fixed use computers for military become more general purpose and neede
 - I/O is from the device to local buffer of controller
 - Device controller informs CPU that it has finished its operation by causing an **interrupt**
 
-# Interrupt
+## Interrupt
 
 An interrupt is a signal emitted by hardware or software when a process or an event needs immediate attention.
 
-## Common Functions of Interrupts
+### Common Functions of Interrupts
 
 - Through the **interrupt vector**, which contains the addresses of all service routines.
 - Interrupt architecture muse save the address of the interrupted instruction
 - A trap or exception is a software-generated interrupt caused either by an error or a user request
 - An OS is interrupt driven
 
-## Interrupt vector
+### Interrupt vector
 
 Table of pointers in memory contains the addresses of interrupt service routines (ISR) or interrupt handler at a fixed location for a given CPU.
 
-## Interrupt Service Routine
+### Interrupt Service Routine
 
 An interrupt service routine (ISR) is a software routine that hardware invokes in response to an interrupt. ISR examines an interrupt, determines how to handle it, executes it, and returns a logical interrupt value.
 
-## Examples (from ChatGPT)
+### Examples (from ChatGPT)
 
 1. User presses a key on the keyboard.
 2. The keyboard hardware sends an electrical signal to the computer's CPU to indicate that a key has been pressed.
@@ -93,7 +95,7 @@ An interrupt service routine (ISR) is a software routine that hardware invokes i
 8. Once the interrupt handler completes its task, it returns control to the interrupted process.
 9. The interrupted process resumes execution from where it was paused, continuing its normal operation.
 
-## Interrupt Timeline
+### Interrupt Timeline
 
 ![[Pasted image 20230716205259.png]]
 
@@ -108,7 +110,7 @@ An interrupt service routine (ISR) is a software routine that hardware invokes i
 9. Set the CPU state back to EI (Enable Interrupt)
 10. Continue to process the running program
 
-## Interrupt types
+### Interrupt types
 
 Interrupts can be split into categories depending on what triggered them:
 
@@ -122,13 +124,13 @@ Exceptions can be further broken down into sub-categories:
 - aborts - things that prevent the interrupted code from continuing. These are things that indicate a major problem - e.g. division by zero, hardware failures, etc.
 - traps - things that don't prevent the interrupted code from continuing. These can be used for debugging, for virtual memory management, etc.
 
-## Interrupt-drive I/O Cycle
+### Interrupt-drive I/O Cycle
 
 ![[Pasted image 20230716205745.png]]
 
-# I/O Structure
+## I/O Structure
 
-## Two methods for handling I/O
+### Two methods for handling I/O
 
 - Control return to user program **only upon I/O completion**
 	- Wait instruction idles the CPU until the next interrupt
@@ -138,21 +140,21 @@ Exceptions can be further broken down into sub-categories:
 	- **System call** - request to the OS to allow user to wait for I/O completion
 	- **Device-status table** contains entry for each I/O device indicating its type, address, and state
 
-# Storage Structure
+## Storage Structure
 
-## Main memory
+### Main memory
 
 - Random access
 - Typically volatile (easily evaporated)
 - Typically DRAM
 
-## Secondary Storage
+### Secondary Storage
 
 - Nonvolatile
 - HDD
 - NVM
 
-## Definitions and Notation
+### Definitions and Notation
 
 - Kilobyte - 1024 bytes
 - Megabyte - 1024^2 bytes
@@ -160,11 +162,11 @@ Exceptions can be further broken down into sub-categories:
 - Terabyte - 1024^4 bytes
 - Petabyte - 1024^5 bytes
 
-# Storage Device Hierarchy
+## Storage Device Hierarchy
 
 ![[Pasted image 20230716215604.png]]
 
-# Direct Memory Access Structure
+## Direct Memory Access Structure
 
 ![[Pasted image 20230719152855.png]]
 
@@ -172,11 +174,11 @@ Exceptions can be further broken down into sub-categories:
 - Transfers blocks of data from buffer storage directly to main memory **without CPU intervention**
 - Only one interrupt is generated per block, rather than the one interrupt per byte
 
-## DMA Example
+### DMA Example
 
 if a computer wants to send data from system memory to a printer, it issues a DMA transfer request to the printer's DMA controller
 
-# Operating System Operations
+## Operating System Operations
 
 - Bootstrap program (load the kernel)
 - Kernel loads
@@ -190,11 +192,11 @@ if a computer wants to send data from system memory to a printer, it issues a DM
 			- infinite loop
 			- processes modifying each other or the OS
 
-# System Call
+## System Call
 
 A [system call](https://www.geeksforgeeks.org/introduction-of-system-call/) is a procedure that provides the interface between a process and the operating system. It is the way by which a computer program requests a service from the kernel of the operating system.
 
-## Examples
+### Examples
 
 | Types of System Calls   | Windows                                                          | Linux                                        |
 | ----------------------- | ---------------------------------------------------------------- | -------------------------------------------- |
@@ -204,7 +206,7 @@ A [system call](https://www.geeksforgeeks.org/introduction-of-system-call/) is
 | Information Maintenance | GetCurrentProcessID()  <br>SetTimer()  <br>Sleep()               | getpid()  <br>alarm()  <br>sleep()           |
 | Communication           | CreatePipe()  <br>CreateFileMapping()  <br>MapViewOfFile()       | pipe()  <br>shmget()  <br>mmap()             |
 
-# Multiprogramming & Multitasking
+## Multiprogramming & Multitasking
 
 |                                  | Multiprogramming                                                                                                                        | Multitasking                                                                                                                |
 | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
@@ -220,17 +222,17 @@ A [system call](https://www.geeksforgeeks.org/introduction-of-system-call/) is
 | CPU switching                    | In multiprogramming, the CPU switches between processes swiftly.                                                                        | In multitasking, the CPU switches among the processes of several programs.                                                  |
 | Mechanism                        | Multiprogramming uses the context switching mechanism.                                                                                  | Multitasking uses the timesharing mechanism.                                                                                |
 
-## Multi programming
+### Multi programming
 
 Multi-programming increases CPU utilisation by organising jobs (code and data) so that the CPU always has one to execute. The idea is to keep multiple jobs in main memory. If one job gets occupied with IO, CPU can be assigned to other job.
 
 ![[Pasted image 20230718225330.png]]
 
-## Multi-tasking
+### Multi-tasking
 
 Multi-tasking is a logical extension of multi-programming. Multitasking is the ability of an OS to execute more than one task simultaneously on a CPU machine. These multiple tasks share common resources (like CPU and memory). In multi-tasking systems, the CPU executes multiple jobs by switching among them typically using a small time quantum, and the switches occur so quickly that the users feel like interact with each executing task at the same time.
 
-### Keywords
+#### Keywords
 
 - process
 - CPU scheduling
@@ -239,7 +241,7 @@ Multi-tasking is a logical extension of multi-programming. Multitasking is the a
 
 ![[Pasted image 20230718225359.png]]
 
-# Dual mode operation
+## Dual mode operation
 
 Dual-mode operation allows OS to protect itself and other
 system components
@@ -250,16 +252,16 @@ Some instructions designated as privileged, only executable in kernel mode
 
 ![[Pasted image 20230718233509.png]]
 
-# Timer
+## Timer
 
 Timer to prevent infinite loop (or process hogging resources)
 
 - It is set to interrupt the computer after some time period
 - OS set the counter (privileged instruction)
 
-# Resource Management
+## Resource Management
 
-## Process Management
+### Process Management
 
 A process is a program in execution. It is a unit of work within the system.
 Program is a **passive entity**; Process is an **active entity**.
@@ -272,7 +274,7 @@ Program is a **passive entity**; Process is an **active entity**.
 - Single-threaded process: one PC specifying location of next instruction to execute
 - Multi-threaded process: one PC per thread
 
-### Process Management Activities
+#### Process Management Activities
 
 The OS is responsible for the following activities in connection with process management:
 
@@ -282,27 +284,27 @@ The OS is responsible for the following activities in connection with process ma
 - Providing mechanisms for process communication
 - Providing mechanisms for deadlock handling
 
-## Memory Management
+### Memory Management
 
 - All (or part) of the instructions must be in memory
 - All (or part) of the data that is needed by the program must be in memory
 
-### Memory Management Activities
+#### Memory Management Activities
 
 - Keeping track of which parts of memory are currently being used and by whom
 - Deciding which processes and data to move into and out of memory
 - Allocating and de-allocating memory space as needed
 
-## File-system Management
+### File-system Management
 
-### File-system Management Activities
+#### File-system Management Activities
 
 - Creating and deleting files and directories
 - Primitives to manipulate files and directories
 - Mapping files onto secondary storage
 - Backup files onto stable (non-volatile) storage media
 
-## Mass-Storage Management
+### Mass-Storage Management
 
 - Mounting and un-mounting
 - Free-space management
@@ -311,28 +313,28 @@ The OS is responsible for the following activities in connection with process ma
 - Partitioning
 - Protection
 
-## Caching
+### Caching
 
 - Cache smaller than storage being cached
 	- Cache management important design problem
 	- Cache size and replacement policy
 
-## Characteristics of Various Types of Storage
+### Characteristics of Various Types of Storage
 
 ![[Pasted image 20230719153506.png]]
 
-## Migration of data "A" from Disk to Register
+### Migration of data "A" from Disk to Register
 
 ![[Pasted image 20230719153816.png]]
 
 - Multitasking environments must be careful to use most recent value, no matter where it is stored in the storage hierarchy
 - Multiprocessor environment must provide **cache coherency** (shared memory hierarchy) in hardware such that all CPUs have the most recent value in their cache
 
-# I/O Subsystem
+## I/O Subsystem
 
 aka I/O system, is a critical component of OS responsible for managing communication between CPU and external devices.
 
-## I/O Subsystem components
+### I/O Subsystem components
 
 - Device drivers
 - I/O manager
@@ -341,11 +343,11 @@ aka I/O system, is a critical component of OS responsible for managing communica
 - Interrupt Handing
 - Error Handling
 
-# Protection and Security
+## Protection and Security
 
 **It is a concept**
 
-## Protection
+### Protection
 
 Any mechanism for controlling access of processes or users to resources defined by the OS
 
@@ -354,7 +356,7 @@ Any mechanism for controlling access of processes or users to resources defined 
 - File permissions
 - Hardware Protection
 
-## Security
+### Security
 
 Defense of the system against internal or external attacks
 
@@ -364,27 +366,27 @@ Defense of the system against internal or external attacks
 - ID theft
 - Theft of service
 
-# Virtualization
+## Virtualization
 
 Virtual environment
 
 ![[Pasted image 20230719161406.png]]
 
-# Distributed Systems
+## Distributed Systems
 
 A distributed system is a computing environment in which various components **are spread across multiple computers** (or other computing devices) **on a network**.
 
-## Network Operating System
+### Network Operating System
 
 It is a specialized type of operating system designed to manage and control network resources and provide services to clients and users in a networked environment.
 
 ![[Pasted image 20230719161734.png]]
 
-# Computer System Architecture
+## Computer System Architecture
 
-## Single-Processor Systems
+### Single-Processor Systems
 
-## Multiprocessors Systems
+### Multiprocessors Systems
 
 - Increased throughput
 - Economy of scale
@@ -393,16 +395,16 @@ It is a specialized type of operating system designed to manage and control netw
 	- Symmetric Multiprocessing - each processor performs all tasks.
 		- ![[Pasted image 20230719162140.png]]
 
-### Dual-Core
+#### Dual-Core
 
 - Multi-chip and multi-core
 	![[Pasted image 20230719162349.png]]
 
-## Multiprocessors Keywords
+### Multiprocessors Keywords
 
 - NUMA
 
-## Clustered Systems
+### Clustered Systems
 
 A clustered system is a group of interconnected computers or servers that work together as a single system to enhance performance, availability, and fault tolerance.
 
@@ -418,26 +420,26 @@ Like multiprocessor systems, but multiple systems working together
 
 ![[Pasted image 20230719163429.png]]
 
-# Computing Environments
+## Computing Environments
 
-## Traditional Computing
+### Traditional Computing
 
-## Mobile Computing
+### Mobile Computing
 
-## Client-Server Computing
+### Client-Server Computing
 
 ![[Pasted image 20230719164122.png]]
 
 - Discord
 
-## Peer-to-Peer Computing
+### Peer-to-Peer Computing
 
 ![[Pasted image 20230719164411.png]]
 
 - Decentralized
 - Skype
 
-## Cloud Computing
+### Cloud Computing
 
 - Public cloud
 - Private cloud
@@ -451,13 +453,13 @@ Like multiprocessor systems, but multiple systems working together
 
 ![[Pasted image 20230719164600.png]]
 
-## Real-Time Embedded Systems
+### Real-Time Embedded Systems
 
 ![[Pasted image 20230719165102.png]]
 
-# Free and Open-Source Operating Systems
+## Free and Open-Source Operating Systems
 
-# Practice Exercises
+## Practice Exercises
 
 1. What are the three main purposes of an operating system?
 2. We have stressed the need for an operating system to make efficient use of the computing hardware.

@@ -1,4 +1,6 @@
-# General Model of a Computer
+# 0 Overview
+
+## General Model of a Computer
 
 User <-> Application <-> Operating System <-> Hardware
 
@@ -20,17 +22,17 @@ User <-> Application <-> Operating System <-> Hardware
 - Application -> User
 	How does the application deliver it back to the user?
 
-# How a computer starts?
+## How a computer starts?
 
 BIOS(POST) -> MBR/GPT -> GRUB -> Kernel -> Init -> RunLevel
 `OS-Independent` | `OS-Dependent (Linux)`
 
-# What is kernel?
+## What is kernel?
 
 A layer inside OS that communicate the tasks between application and hardware
 ![[Pasted image 20230716182407.png]]
 
-# How processes talk to each other?
+## How processes talk to each other?
 
 - Pipelining `|` in UNIX
 - stdin stdout stderr
