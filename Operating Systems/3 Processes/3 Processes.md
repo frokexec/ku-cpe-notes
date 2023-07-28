@@ -2,36 +2,41 @@
 
 Table of Contents
 
-1. [Process Concept](#Process%20Concept)
-	1. [Process in Memory](#Process%20in%20Memory)
-	2. [Process State](#Process%20State)
-	3. [Process Control Block (PCB)](#Process%20Control%20Block%20(PCB))
-		1. [Threads](#Threads)
-	4. [Process Scheduling](#Process%20Scheduling)
-	5. [Representation of Process Scheduling](#Representation%20of%20Process%20Scheduling)
-	6. [CPU Switch From Process to Process](#CPU%20Switch%20From%20Process%20to%20Process)
-	7. [Context Switch](#Context%20Switch)
-2. [Operation on Processes](#Operation%20on%20Processes)
-	1. [Process Creation](#Process%20Creation)
-		1. [Resource sharing options](#Resource%20sharing%20options)
-		2. [Execution option](#Execution%20option)
-		3. [Address space](#Address%20space)
-		4. [Tree or processes in Linux](#Tree%20or%20processes%20in%20Linux)
-	2. [Process Termination](#Process%20Termination)
-		1. [Zombie Process](#Zombie%20Process)
-		2. [Orphan Process](#Orphan%20Process)
-3. [Interprocess Communication](#Interprocess%20Communication)
-	1. [Producer-Consumer Problem](#Producer-Consumer%20Problem)
-	2. [IPC - Shared Memory](#IPC%20-%20Shared%20Memory)
-	3. [What about Filling all the Buffers?](#What%20about%20Filling%20all%20the%20Buffers?)
-	4. [IPC - Message Passing](#IPC%20-%20Message%20Passing)
-	5. [Implementation of Communication Link](#Implementation%20of%20Communication%20Link)
-	6. [Direct Communication](#Direct%20Communication)
-	7. [Indirect Communication](#Indirect%20Communication)
-	8. [Synchronization](#Synchronization)
-		1. [Blocking](#Blocking)
-		2. [Non-blocking](#Non-blocking)
-	9. [Buffering](#Buffering)
+1. [[#Process Concept|Process Concept]]
+	1. [[#Process Concept#Process in Memory|Process in Memory]]
+	2. [[#Process Concept#Process State|Process State]]
+	3. [[#Process Concept#Process Control Block (PCB)|Process Control Block (PCB)]]
+		1. [[#Process Control Block (PCB)#Threads|Threads]]
+	4. [[#Process Concept#Process Scheduling|Process Scheduling]]
+	5. [[#Process Concept#Representation of Process Scheduling|Representation of Process Scheduling]]
+	6. [[#Process Concept#CPU Switch From Process to Process|CPU Switch From Process to Process]]
+	7. [[#Process Concept#Context Switch|Context Switch]]
+2. [[#Operation on Processes|Operation on Processes]]
+	1. [[#Operation on Processes#Process Creation|Process Creation]]
+		1. [[#Process Creation#Resource sharing options|Resource sharing options]]
+		2. [[#Process Creation#Execution option|Execution option]]
+		3. [[#Process Creation#Address space|Address space]]
+		4. [[#Process Creation#Tree or processes in Linux|Tree or processes in Linux]]
+	2. [[#Operation on Processes#Process Termination|Process Termination]]
+		1. [[#Process Termination#Zombie Process|Zombie Process]]
+		2. [[#Process Termination#Orphan Process|Orphan Process]]
+3. [[#Interprocess Communication|Interprocess Communication]]
+	1. [[#Interprocess Communication#Producer-Consumer Problem|Producer-Consumer Problem]]
+	2. [[#Interprocess Communication#IPC - Shared Memory|IPC - Shared Memory]]
+	3. [[#Interprocess Communication#What about Filling all the Buffers?|What about Filling all the Buffers?]]
+	4. [[#Interprocess Communication#IPC - Message Passing|IPC - Message Passing]]
+	5. [[#Interprocess Communication#Implementation of Communication Link|Implementation of Communication Link]]
+	6. [[#Interprocess Communication#Direct Communication|Direct Communication]]
+	7. [[#Interprocess Communication#Indirect Communication|Indirect Communication]]
+	8. [[#Interprocess Communication#Synchronization|Synchronization]]
+		1. [[#Synchronization#Blocking (Synchronous)|Blocking (Synchronous)]]
+		2. [[#Synchronization#Non-blocking (Asynchronous)|Non-blocking (Asynchronous)]]
+	9. [[#Interprocess Communication#Buffering|Buffering]]
+4. [[#Example IPC Systems|Example IPC Systems]]
+	1. [[#Example IPC Systems#POSIX IPC Systems|POSIX IPC Systems]]
+	2. [[#Example IPC Systems#Mach IPC Systems|Mach IPC Systems]]
+	3. [[#Example IPC Systems#Windows IPC Systems|Windows IPC Systems]]
+5. [[#Pipes|Pipes]]
 
 ## Process Concept
 
@@ -214,6 +219,8 @@ We can do so by having an integer **counter** that keeps track of the number of 
 
 ### IPC - Message Passing
 
+![Message Passing System](https://www.tutorialspoint.com/assets/questions/media/60294/message%20passing%20technique.jpg)
+
 Processes communicate with each other without resorting to shared variables
 
 Two operations:
@@ -266,20 +273,152 @@ Properties of communication link
 
 ### Synchronization
 
-#### Blocking
+#### Blocking (Synchronous)
 
-- Blocking send - the sender is blocked until the message is revived
-- Blocking receive - the receiver is blocked until a message is available
+- **Blocking send** - the sender is blocked **until the message is received**
+- **Blocking receive** - the receiver is blocked until a message is available
 
-#### Non-blocking
+#### Non-blocking (Asynchronous)
 
-- Non-blocking send - the sender sends the message and continue
-- Non-blocking receive - the receiver receives a valid message or null message
+- **Non-blocking send** - the sender sends the message and continue
+- **Non-blocking receive** - the receiver receives a valid message or null message
 
 ### Buffering
 
 Queue of messages attached to the link
 
-- Zero capacity - no messages are queued on a link. Sender must wait for receive (rendezvous)
-- Bounded capacity - finite length of n messages, sender must wait if link is full
-- Unbounded capacity - infinite length, sender never waits
+- **Zero capacity** - _no messages are queued_ on a link. Sender must wait for receive (_rendezvous_, only one message can pass at a time)
+- **Bounded capacity** - finite _length of n_ messages, sender must wait if link is full
+- **Unbounded capacity** - _infinite length_, sender never waits
+
+### Example IPC Systems
+
+#### POSIX IPC Systems
+
+- Uses POSIX Shared Memory
+	- Process creates/opens shared memory segment
+		`shm_fd = shm_open(name, O_CREAT | O_RDWR, 0666)`
+	- Set the size of the object (`ftruncate(shm_fd, 4096`)
+	- Memory-map (`mmap`) a file pointer to the shared memory object
+	- Reading and writing to shared memory is done by using the pointer returned by `mmap()`
+
+#### Mach IPC Systems
+
+- Message based
+	- Even system calls are messages
+	- Each task gets two ports at creation - _Kernel_ and _Notify_
+	- Messages are sent and received using `mach_msg()`
+	- Ports needed for communication, created via `mach_port_allocate()`
+	- Send and receive are flexible; for example four options if mailbox full:
+		- Wait indefinitely
+		- Wait at most n milliseconds
+		- Return immediately
+		- Temporarily cache a message
+
+#### Windows IPC Systems
+
+- Message-passing centric via advanced _local procedure call (LPC)_ facility
+	![[Pasted image 20230728210011.png]]
+- Only works between processes on the same system
+- Use ports (like mailboxes) to establish and maintain communication channels
+- Communication works as follows:
+	- The client opens a _handle_ to the subsystem's _connection port_ object
+	- The client sends a connection request
+	- The server creates two private _communication ports_ and returns the handle to one of them to the client
+	- The client and server use the corresponding port handle to send messages or callbacks and to listen for replies
+
+### Pipes
+
+Conceptually, a pipe is a connection between two processes, such that the standard output from one process becomes the standard input of the other process. [s](https://www.geeksforgeeks.org/pipe-system-call/)
+
+#### Piping issues
+
+- Is communication unidirectional or bidirectional
+- In the case of two-way communication, is it half or full-duplex?
+- Must there exists a relationship (i.e., _parent-child_) between the communicating processes?
+- Can the pipes be used over a network?
+
+#### Type of pipes
+
+- **Ordinary pipes** - cannot be accessed from outside the process that created it. Typically, a parent process creates a pipe and uses it to communicate with a child process that it created.
+- **Named pipes** - can be accessed _without_ a parent-child relationship
+
+#### Ordinary pipes (anonymous pipes)
+
+- Unidirectional
+- Allow communication in standard producer-consumer style
+- Producer writes to one end (write-end)
+- Consumer reads from the other end (read-end)
+- **Require parent-child relationship** between communicating processes
+
+![[Pasted image 20230728215558.png]]
+
+#### Named Pipes (FIFOs)
+
+- More versatile and offer more capabilities than ordinary pipes
+- Can facilitate communication between unrelated processes and persist even after the processes are terminated
+- **No parent-child relationship is necessary**
+- Several processes can use the named pipe for communication
+
+![[Pasted image 20230728220131.png]]
+
+## Communications in Client-Server Systems
+
+### Sockets
+
+Sockets are a programming interface that allows processes to communicate over a network, either locally or across different machines. They provide a standard mechanism for IPC between processes running on different devices, using different OS, or even different networks.
+
+- Concatenation of IP address and _port_ - a number included at start of message packet to differentiate network services on a host
+- Communication consists between a pair of sockets
+- All ports below 1024 are used for standard services
+- Special IP address 127.0.0.1 (_loopback_) to refer to system on which process is running
+
+#### Types of sockets
+
+- **Transmission Control Protocol (TCP)**
+	- Reliable, connection-oriented
+	- The data is sent _in streams_, _ensuring that all data arrives_ in the correct order and without errors.
+	- Is well-suited for application that require data integrity
+		- Web browsers
+		- Email clients
+		- File transfer applications
+- **User Datagram Protocol (UDP)**
+	- Unreliable, connectionless communication
+	- Data is sent as _individual packets_, and there is _no guarantee_ of delivery, order, or error checking.
+	- Used in applications where speed and reduced overhead are critical than data reliability
+		- Video streaming
+		- Online gaming
+		- DNS
+
+### Remote Procedure Calls (RPC)
+
+A protocol that allows a program running on one device to call a subroutine or function (a procedure) on another device, as if the function was a local procedure.
+In other words, RPC enables IPC between processes running on different machines over a network
+
+- RPC abstracts procedure calls between processes on networked systems
+	- Uses ports for service differentiation
+- _Stubs_ - client-side proxy for the actual procedure on the server
+- The _client-side stub_ locates the server and _marshalls_ the parameters
+- The _server-side stub_ receives this message, unpacks the marshalled parameters, and performs the procedure on the server
+
+_**Marshalling**_ is a specific form of serialization focused on _preparing data for network communication_
+
+![[Pasted image 20230728225353.png]]
+
+- Data representation handled via _External Data Representation (XDR)_ format to account for _different architectures_
+	- Platform Independence
+	- Data Type Representation
+	- Language Independence
+	- Compactness and Efficiency
+	- Endianness handling
+ - Messages can be delivered _exactly once_ rather than _at most once_
+ - OS typically provides a rendezvous (or _matchmaker_) service to connect client and server
+
+_**The External Data Representation (XDR)**_ defines a _standard representation for data in the network_ to support heterogeneous network computing
+
+![[Pasted image 20230728231937.png|Execution of RPC]]
+
+## kw
+
+- rendezvous
+- marshalling
