@@ -70,7 +70,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "f754d78f68a1ba10",
@@ -161,6 +162,7 @@
   },
   "active": "a1de174ca120079b",
   "lastOpenFiles": [
+    "Pasted image 20230728183844.jpg",
     "Data Communication/04 Analog/04 Analog.md",
     "Operating Systems/0 Overview/0 Overview.md",
     "Operating Systems/1 Introduction/1 Introduction.md",
