@@ -130,9 +130,9 @@ Source code compiled into object files designed to be loaded into any physical m
 App compiled on one system usually not executable on other OS.
 Each OS provides its own **unique system calls** 
 
-## ABI
+## Application Binary Interface (ABI)
 
-Like API but between OS and hardware
+An interface between two binary program modules. Often, one of these modules is a library or operating system facility,
 
 # Design and Implementation
 
