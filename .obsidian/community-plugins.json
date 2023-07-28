@@ -1,5 +1,14 @@
 [
-  "remotely-save",
   "oz-clear-unused-images",
-  "obsidian-git"
+  "obsidian-git",
+  "nldates-obsidian",
+  "better-word-count",
+  "obsidian-dictionary-plugin",
+  "obsidian-linter",
+  "cm-editor-syntax-highlight-obsidian",
+  "omnisearch",
+  "obsidian-outliner",
+  "url-into-selection",
+  "obsidian-spaced-repetition",
+  "obsidian-plugin-toc"
 ]

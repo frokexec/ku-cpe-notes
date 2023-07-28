@@ -129,8 +129,17 @@
                 "file": "Operating Systems/2 Operating System Services/2 Operating System Services.md"
               }
             }
+          },
+          {
+            "id": "91e1ef39b83c94e3",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -146,9 +155,18 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "oz-clear-unused-images:Clear Unused Images": false,
-      "remotely-save:Remotely Save": false
+      "omnisearch:Omnisearch": false,
+      "obsidian-spaced-repetition:Review flashcards": false
     }
   },
   "active": "a1de174ca120079b",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "Operating Systems/3 Processes/3 Processes.md",
+    "Operating Systems/2 Operating System Services/2 Operating System Services.md",
+    "Operating Systems/3 Processes/Pasted image 20230720070449.png",
+    "Data Communication/04 Analog/04 Analog.md",
+    "Operating Systems/0 Overview/0 Overview.md",
+    "Operating Systems/1 Introduction/1 Introduction.md",
+    "Operating Systems/2 Operating System Services/Pasted image 20230719170703.png"
+  ]
 }
