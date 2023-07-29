@@ -1,12 +1,5 @@
 # 0 Overview
 
-Table of Contents
-
-1. [General Model of a Computer](#General%20Model%20of%20a%20Computer)
-2. [How a computer starts?](#How%20a%20computer%20starts?)
-3. [What is kernel?](#What%20is%20kernel?)
-4. [How processes talk to each other?](#How%20processes%20talk%20to%20each%20other?)
-
 ## General Model of a Computer
 
 User <-> Application <-> Operating System <-> Hardware

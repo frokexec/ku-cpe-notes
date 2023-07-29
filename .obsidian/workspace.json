@@ -4,16 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "064c4acce91abf67",
+        "id": "c6c49f5f7c81b032",
         "type": "tabs",
         "children": [
           {
-            "id": "a1de174ca120079b",
+            "id": "b232275aa309740f",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Operating Systems/3 Processes/Pasted image 20230728183844.jpg"
+                "file": "Operating Systems/3 Processes/3 Processes.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               }
             }
           }
@@ -83,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Operating Systems/3 Processes/Pasted image 20230728183844.jpg",
+                "file": "Operating Systems/3 Processes/3 Processes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Operating Systems/3 Processes/Pasted image 20230728183844.jpg",
+                "file": "Operating Systems/3 Processes/3 Processes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Operating Systems/3 Processes/Pasted image 20230728183844.jpg"
+                "file": "Operating Systems/3 Processes/3 Processes.md"
               }
             }
           },
@@ -136,12 +139,11 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -156,19 +158,19 @@
       "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "f8ffdedc4914590d",
+  "active": "b232275aa309740f",
   "lastOpenFiles": [
+    "Operating Systems/0 Overview/0 Overview.md",
+    "Data Communication/04 Analog/04 Analog.md",
+    "Operating Systems/2 Operating System Services/2 Operating System Services.md",
+    "Operating Systems/1 Introduction/1 Introduction.md",
+    "Operating Systems/3 Processes/Pasted image 20230728183844.jpg",
     "Operating Systems/3 Processes/3 Processes.md",
     "Operating Systems/3 Processes/Pasted image 20230728231937.png",
     "Operating Systems/3 Processes/Pasted image 20230728225353.png",
     "Operating Systems/3 Processes/Pasted image 20230728220131.png",
     "Operating Systems/3 Processes/Pasted image 20230728215558.png",
     "Operating Systems/3 Processes/Pasted image 20230728210011.png",
-    "Operating Systems/3 Processes/Pasted image 20230728183844.jpg",
-    "Data Communication/04 Analog/04 Analog.md",
-    "Operating Systems/0 Overview/0 Overview.md",
-    "Operating Systems/1 Introduction/1 Introduction.md",
-    "Operating Systems/2 Operating System Services/2 Operating System Services.md",
     "Operating Systems/3 Processes/Pasted image 20230720070449.png",
     "Operating Systems/2 Operating System Services/Pasted image 20230719170703.png"
   ]

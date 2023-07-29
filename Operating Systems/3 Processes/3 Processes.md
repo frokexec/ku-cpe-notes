@@ -1,43 +1,5 @@
 # 3 Processes
 
-Table of Contents
-
-1. [[#Process Concept|Process Concept]]
-	1. [[#Process Concept#Process in Memory|Process in Memory]]
-	2. [[#Process Concept#Process State|Process State]]
-	3. [[#Process Concept#Process Control Block (PCB)|Process Control Block (PCB)]]
-		1. [[#Process Control Block (PCB)#Threads|Threads]]
-	4. [[#Process Concept#Process Scheduling|Process Scheduling]]
-	5. [[#Process Concept#Representation of Process Scheduling|Representation of Process Scheduling]]
-	6. [[#Process Concept#CPU Switch From Process to Process|CPU Switch From Process to Process]]
-	7. [[#Process Concept#Context Switch|Context Switch]]
-2. [[#Operation on Processes|Operation on Processes]]
-	1. [[#Operation on Processes#Process Creation|Process Creation]]
-		1. [[#Process Creation#Resource sharing options|Resource sharing options]]
-		2. [[#Process Creation#Execution option|Execution option]]
-		3. [[#Process Creation#Address space|Address space]]
-		4. [[#Process Creation#Tree or processes in Linux|Tree or processes in Linux]]
-	2. [[#Operation on Processes#Process Termination|Process Termination]]
-		1. [[#Process Termination#Zombie Process|Zombie Process]]
-		2. [[#Process Termination#Orphan Process|Orphan Process]]
-3. [[#Interprocess Communication|Interprocess Communication]]
-	1. [[#Interprocess Communication#Producer-Consumer Problem|Producer-Consumer Problem]]
-	2. [[#Interprocess Communication#IPC - Shared Memory|IPC - Shared Memory]]
-	3. [[#Interprocess Communication#What about Filling all the Buffers?|What about Filling all the Buffers?]]
-	4. [[#Interprocess Communication#IPC - Message Passing|IPC - Message Passing]]
-	5. [[#Interprocess Communication#Implementation of Communication Link|Implementation of Communication Link]]
-	6. [[#Interprocess Communication#Direct Communication|Direct Communication]]
-	7. [[#Interprocess Communication#Indirect Communication|Indirect Communication]]
-	8. [[#Interprocess Communication#Synchronization|Synchronization]]
-		1. [[#Synchronization#Blocking (Synchronous)|Blocking (Synchronous)]]
-		2. [[#Synchronization#Non-blocking (Asynchronous)|Non-blocking (Asynchronous)]]
-	9. [[#Interprocess Communication#Buffering|Buffering]]
-4. [[#Example IPC Systems|Example IPC Systems]]
-	1. [[#Example IPC Systems#POSIX IPC Systems|POSIX IPC Systems]]
-	2. [[#Example IPC Systems#Mach IPC Systems|Mach IPC Systems]]
-	3. [[#Example IPC Systems#Windows IPC Systems|Windows IPC Systems]]
-5. [[#Pipes|Pipes]]
-
 ## Process Concept
 
 Process - a program in executing; process execution must progress in sequential fashion
