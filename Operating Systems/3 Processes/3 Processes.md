@@ -47,7 +47,7 @@ Information associated with each process
 ### Process Scheduling
 
 **Process scheduler** selects among available processes for next execution on CPU core
-Goal is to maximize CPU use, quickly switch processes ibti CPU core
+Goal is to maximize CPU use, quickly switch processes on CPU core
 
 - **Ready queue** - ready to execute
 - **Wait queues** - waiting for an event
@@ -384,3 +384,7 @@ _**The External Data Representation (XDR)**_ defines a _standard representation 
 
 - rendezvous
 - marshalling
+
+## Continue
+
+[[4 Threads & Concurrency]]

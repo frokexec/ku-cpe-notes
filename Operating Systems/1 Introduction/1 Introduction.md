@@ -480,3 +480,7 @@ Like multiprocessor systems, but multiple systems working together
 9. Some CPUs provide for more than two modes of operation. What are two possible uses of these multiple modes? Timers could be used to compute the current time. Provide a short description of how this could be accomplished.
 10. Give two reasons why caches are useful. What problems do they solve? What problems do they cause? If a cache can be made as large as the device for which it is caching (for instance, a cache as large as a disk), why not make it that large and eliminate the device?
 11. Distinguish between the client–server and peer-to-peer models of distributed systems.
+
+## Continue
+
+[[2 Operating System Services]]

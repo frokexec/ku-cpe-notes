@@ -194,3 +194,7 @@ Move as much from kernel to the user space
 ### Tracing (follow)
 
 Collects data for a specific event, such as steps involved in a system call invocation
+
+## Continue
+
+[[3 Processes]]

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Operating Systems/3 Processes/3 Processes.md",
+                "file": "Operating Systems/4 Threads & Concurrency/4 Threads & Concurrency.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -70,7 +70,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "f754d78f68a1ba10",
@@ -86,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Operating Systems/3 Processes/3 Processes.md",
+                "file": "Operating Systems/4 Threads & Concurrency/4 Threads & Concurrency.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Operating Systems/3 Processes/3 Processes.md",
+                "file": "Operating Systems/4 Threads & Concurrency/4 Threads & Concurrency.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Operating Systems/3 Processes/3 Processes.md"
+                "file": "Operating Systems/4 Threads & Concurrency/4 Threads & Concurrency.md"
               }
             }
           },
@@ -143,7 +144,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 209.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -160,18 +161,23 @@
   },
   "active": "b232275aa309740f",
   "lastOpenFiles": [
-    "Operating Systems/0 Overview/0 Overview.md",
-    "Data Communication/04 Analog/04 Analog.md",
+    "Pasted image 20230729195048.png",
+    "Pasted image 20230729195038.png",
+    "Pasted image 20230729195009.png",
+    "Pasted image 20230729194400.png",
+    "Pasted image 20230729174522.png",
+    "Pasted image 20230729172705.png",
+    "Pasted image 20230729151255.png",
+    "Pasted image 20230729151246.png",
+    "Operating Systems/3 Processes/3 Processes.md",
+    "Operating Systems/4 Threads & Concurrency/4 Threads & Concurrency.md",
+    "Pasted image 20230729144621.png",
+    "Pasted image 20230729135556.png",
     "Operating Systems/2 Operating System Services/2 Operating System Services.md",
     "Operating Systems/1 Introduction/1 Introduction.md",
-    "Operating Systems/3 Processes/Pasted image 20230728183844.jpg",
-    "Operating Systems/3 Processes/3 Processes.md",
-    "Operating Systems/3 Processes/Pasted image 20230728231937.png",
-    "Operating Systems/3 Processes/Pasted image 20230728225353.png",
-    "Operating Systems/3 Processes/Pasted image 20230728220131.png",
-    "Operating Systems/3 Processes/Pasted image 20230728215558.png",
-    "Operating Systems/3 Processes/Pasted image 20230728210011.png",
-    "Operating Systems/3 Processes/Pasted image 20230720070449.png",
-    "Operating Systems/2 Operating System Services/Pasted image 20230719170703.png"
+    "Operating Systems/0 Overview/0 Overview.md",
+    "Data Communication/04 Analog/04 Analog.md",
+    "Operating Systems/4 Threads & Concurrency",
+    "Operating Systems/3 Processes/Pasted image 20230728183844.jpg"
   ]
 }
