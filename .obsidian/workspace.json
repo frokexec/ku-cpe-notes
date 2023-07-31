@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "c6c49f5f7c81b032",
+        "id": "75713d4002a54cb2",
         "type": "tabs",
         "children": [
           {
-            "id": "b232275aa309740f",
+            "id": "eeb05534666ee9c1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Operating Systems/4 Threads & Concurrency/4 Threads & Concurrency.md",
+                "file": "Operating Systems/2 Operating System Services/System Calls.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#index",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,8 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "f754d78f68a1ba10",
@@ -87,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Operating Systems/4 Threads & Concurrency/4 Threads & Concurrency.md",
+                "file": "Operating Systems/2 Operating System Services/System Calls.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Operating Systems/4 Threads & Concurrency/4 Threads & Concurrency.md",
+                "file": "Operating Systems/2 Operating System Services/System Calls.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Operating Systems/4 Threads & Concurrency/4 Threads & Concurrency.md"
+                "file": "Operating Systems/2 Operating System Services/System Calls.md"
               }
             }
           },
@@ -144,7 +143,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 209.5
+    "width": 209.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -156,28 +156,58 @@
       "command-palette:Open command palette": false,
       "oz-clear-unused-images:Clear Unused Images": false,
       "omnisearch:Omnisearch": false,
-      "obsidian-spaced-repetition:Review flashcards": false
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "b232275aa309740f",
+  "active": "eeb05534666ee9c1",
   "lastOpenFiles": [
-    "Pasted image 20230729195048.png",
-    "Pasted image 20230729195038.png",
-    "Pasted image 20230729195009.png",
-    "Pasted image 20230729194400.png",
-    "Pasted image 20230729174522.png",
-    "Pasted image 20230729172705.png",
-    "Pasted image 20230729151255.png",
-    "Pasted image 20230729151246.png",
-    "Operating Systems/3 Processes/3 Processes.md",
-    "Operating Systems/4 Threads & Concurrency/4 Threads & Concurrency.md",
-    "Pasted image 20230729144621.png",
-    "Pasted image 20230729135556.png",
-    "Operating Systems/2 Operating System Services/2 Operating System Services.md",
-    "Operating Systems/1 Introduction/1 Introduction.md",
-    "Operating Systems/0 Overview/0 Overview.md",
-    "Data Communication/04 Analog/04 Analog.md",
+    "Operating Systems/2 Operating System Services/Operating System Services.md",
+    "Operating Systems/2 Operating System Services/System Calls.md",
+    "Operating Systems/2 Operating System Services/Linkers and Loaders.md",
+    "Operating Systems/2 Operating System Services/System Services.md",
+    "Operating Systems/1 Introduction/Dual mode operation.md",
+    "Operating Systems/1 Introduction/Introduction.md",
+    "Operating Systems/4 Threads & Concurrency/Threads & Concurrency.md",
+    "Operating Systems/3 Processes/Processes.md",
+    "Operating Systems/3 Processes/Interprocess Communication.md",
+    "Operating Systems/2 Operating System Services/OS Debugging.md",
+    "Operating Systems/2 Operating System Services/System Boot.md",
+    "Operating Systems/1 Introduction/Operating System Operations.md",
+    "Operating Systems/3 Processes/Process Termination.md",
+    "Operating Systems/4 Threads & Concurrency/Implicit Threading.md",
+    "Operating Systems/1 Introduction/Direct Memory Access Structure.md",
+    "Operating Systems/1 Introduction/Storage Structure.md",
+    "Operating Systems/1 Introduction/IO Structure.md",
+    "Operating Systems/1 Introduction/IO Subsystem.md",
+    "Operating Systems/4 Threads & Concurrency/Thread Libraries.md",
+    "Operating Systems/1 Introduction/Computer System Organization.md",
+    "Operating Systems/1 Introduction/Interrupt.md",
+    "Operating Systems/0 Overview/Overview.md",
+    "Operating Systems/1 Introduction/Interrupt vector.md",
+    "Operating Systems/1 Introduction/Interrupt Service Routine.md",
+    "Operating Systems/4 Threads & Concurrency/Operating System Examples.md",
+    "Operating Systems/1 Introduction/Protection and Security.md",
+    "Assets/Pasted image 20230725092011.png",
+    "Assets/Pasted image 20230729135556.png",
+    "Assets/Pasted image 20230720070449.png",
     "Operating Systems/4 Threads & Concurrency",
-    "Operating Systems/3 Processes/Pasted image 20230728183844.jpg"
+    "Assets/Pasted image 20230719170703.png",
+    "Operating Systems/3 Processes",
+    "Operating Systems/2 Operating System Services",
+    "Two methods for handling I",
+    "I",
+    "Assets/Pasted image 20230716182407.png",
+    "Operating Systems/1 Introduction",
+    "Operating Systems/0 Overview",
+    "Assets/Pasted image 20230731151550.png",
+    "Operating Systems",
+    "Assets",
+    "Assets/Pasted image 20230731154755.png",
+    "Assets/Pasted image 20230731122313.png",
+    "Assets/Pasted image 20230731124931.png",
+    "Assets/Pasted image 20230731122342.png",
+    "Operating Systems (backup)/4 Threads & Concurrency"
   ]
 }

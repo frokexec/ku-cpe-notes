@@ -3,5 +3,8 @@
   "vimMode": true,
   "tabSize": 2,
   "showFrontmatter": true,
-  "strictLineBreaks": true
+  "strictLineBreaks": true,
+  "attachmentFolderPath": "Assets",
+  "promptDelete": false,
+  "alwaysUpdateLinks": true
 }
