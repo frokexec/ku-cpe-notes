@@ -17,5 +17,22 @@
     }
   ],
   "editor:open-search": [],
-  "global-search:open": []
+  "global-search:open": [],
+  "cmenu-plugin:underline": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "U"
+    }
+  ],
+  "editor:toggle-code": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "`"
+    }
+  ]
 }
