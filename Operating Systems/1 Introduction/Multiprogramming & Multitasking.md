@@ -16,7 +16,7 @@
 
 ## Multi programming
 
-Multi-programming increases CPU utilisation by organising jobs (code and data) so that the CPU always has one to execute. The idea is to keep multiple jobs in main memory. If one job gets occupied with IO, CPU can be assigned to other job.
+Multi-programming increases CPU utilisation by organising jobs (code and data) so that the CPU *always has one to execute*. The idea is to keep multiple jobs in main memory. If one job gets occupied with IO, CPU can be assigned to other job.
 
 ![[Pasted image 20230718225330.png]]
 

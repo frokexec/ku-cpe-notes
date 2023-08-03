@@ -4,23 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "75713d4002a54cb2",
+        "id": "6391501849caabbe",
         "type": "tabs",
         "children": [
           {
-            "id": "eeb05534666ee9c1",
+            "id": "7779edebe91cc9c1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Operating Systems/2 Operating System Services/System Calls.md",
+                "file": "Operating Systems/5 CPU Scheduling/CPU Scheduling.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "16d092d21a754c01",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/Shortest-Remaining-Time-First Scheduling.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Operating Systems/2 Operating System Services/System Calls.md",
+                "file": "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/Shortest-Remaining-Time-First Scheduling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Operating Systems/2 Operating System Services/System Calls.md",
+                "file": "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/Shortest-Remaining-Time-First Scheduling.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Operating Systems/2 Operating System Services/System Calls.md"
+                "file": "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/Shortest-Remaining-Time-First Scheduling.md"
               }
             }
           },
@@ -161,53 +175,52 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "eeb05534666ee9c1",
+  "active": "16d092d21a754c01",
   "lastOpenFiles": [
-    "Operating Systems/2 Operating System Services/Operating System Services.md",
-    "Operating Systems/2 Operating System Services/System Calls.md",
-    "Operating Systems/2 Operating System Services/Linkers and Loaders.md",
-    "Operating Systems/2 Operating System Services/System Services.md",
-    "Operating Systems/1 Introduction/Dual mode operation.md",
-    "Operating Systems/1 Introduction/Introduction.md",
-    "Operating Systems/4 Threads & Concurrency/Threads & Concurrency.md",
+    "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/Shortest-Job-Next (SJN) Scheduling.md",
+    "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/Shortest-Remaining-Time-First Scheduling.md",
+    "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/Scheduling Algorithms.md",
+    "Assets/Pasted image 20230803170832.png",
+    "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/First-Come, First-Served (FCFS) Scheduling.md",
+    "Operating Systems/5 CPU Scheduling/Determining Length of Next CPU Burst.md",
+    "Assets/Pasted image 20230803170104.png",
+    "Assets/Pasted image 20230803165409.png",
+    "Assets/Pasted image 20230803165359.png",
+    "Assets/Pasted image 20230803165234.png",
+    "Assets/Pasted image 20230803165203.png",
+    "Operating Systems/5 CPU Scheduling/Scheduling Algorithms",
+    "Operating Systems/5 CPU Scheduling/Preemptive and Nonpreemptive Scheduling.md",
+    "Operating Systems/5 CPU Scheduling/CPU Scheduling.md",
+    "Operating Systems/5 CPU Scheduling/CPU-IO Burst Cycle.md",
+    "Operating Systems/5 CPU Scheduling/CPU Scheduler.md",
+    "Operating Systems/5 CPU Scheduling/Scheduling Criteria.md",
+    "Operating Systems/5 CPU Scheduling/Dispatcher.md",
+    "Assets/Pasted image 20230803152434.png",
     "Operating Systems/3 Processes/Processes.md",
-    "Operating Systems/3 Processes/Interprocess Communication.md",
-    "Operating Systems/2 Operating System Services/OS Debugging.md",
-    "Operating Systems/2 Operating System Services/System Boot.md",
-    "Operating Systems/1 Introduction/Operating System Operations.md",
-    "Operating Systems/3 Processes/Process Termination.md",
+    "Assets/Pasted image 20230803151143.png",
+    "Operating Systems/1 Introduction/Multiprogramming & Multitasking.md",
+    "Operating Systems/3 Processes/Communications in Client-Server Systems.md",
+    "Operating Systems/5 CPU Scheduling",
+    "Operating Systems/4 Threads & Concurrency/Operating System Examples.md",
+    "Operating Systems/4 Threads & Concurrency/Threads & Concurrency.md",
+    "Operating Systems/4 Threads & Concurrency/Threading Issues.md",
+    "Operating Systems/4 Threads & Concurrency/Multithreading Models.md",
     "Operating Systems/4 Threads & Concurrency/Implicit Threading.md",
-    "Operating Systems/1 Introduction/Direct Memory Access Structure.md",
-    "Operating Systems/1 Introduction/Storage Structure.md",
     "Operating Systems/1 Introduction/IO Structure.md",
-    "Operating Systems/1 Introduction/IO Subsystem.md",
-    "Operating Systems/4 Threads & Concurrency/Thread Libraries.md",
-    "Operating Systems/1 Introduction/Computer System Organization.md",
+    "Operating Systems/2 Operating System Services/System Calls.md",
+    "Operating Systems/1 Introduction/Introduction.md",
     "Operating Systems/1 Introduction/Interrupt.md",
     "Operating Systems/0 Overview/Overview.md",
-    "Operating Systems/1 Introduction/Interrupt vector.md",
-    "Operating Systems/1 Introduction/Interrupt Service Routine.md",
-    "Operating Systems/4 Threads & Concurrency/Operating System Examples.md",
-    "Operating Systems/1 Introduction/Protection and Security.md",
+    "Operating Systems/4 Threads & Concurrency/Multicore Programming.md",
     "Assets/Pasted image 20230725092011.png",
     "Assets/Pasted image 20230729135556.png",
-    "Assets/Pasted image 20230720070449.png",
     "Operating Systems/4 Threads & Concurrency",
-    "Assets/Pasted image 20230719170703.png",
     "Operating Systems/3 Processes",
     "Operating Systems/2 Operating System Services",
     "Two methods for handling I",
     "I",
-    "Assets/Pasted image 20230716182407.png",
     "Operating Systems/1 Introduction",
     "Operating Systems/0 Overview",
-    "Assets/Pasted image 20230731151550.png",
-    "Operating Systems",
-    "Assets",
-    "Assets/Pasted image 20230731154755.png",
-    "Assets/Pasted image 20230731122313.png",
-    "Assets/Pasted image 20230731124931.png",
-    "Assets/Pasted image 20230731122342.png",
-    "Operating Systems (backup)/4 Threads & Concurrency"
+    "Operating Systems"
   ]
 }

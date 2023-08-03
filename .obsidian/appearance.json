@@ -3,5 +3,6 @@
   "cssTheme": "Blue Topaz",
   "enabledCssSnippets": [
     "big-math"
-  ]
+  ],
+  "baseFontSize": 14
 }
