@@ -13,28 +13,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Operating Systems/5 CPU Scheduling/CPU Scheduling.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "16d092d21a754c01",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/Shortest-Remaining-Time-First Scheduling.md",
+                "file": "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/Priority Scheduling.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -100,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/Shortest-Remaining-Time-First Scheduling.md",
+                "file": "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/Priority Scheduling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/Shortest-Remaining-Time-First Scheduling.md",
+                "file": "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/Priority Scheduling.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/Shortest-Remaining-Time-First Scheduling.md"
+                "file": "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/Priority Scheduling.md"
               }
             }
           },
@@ -175,26 +161,30 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "16d092d21a754c01",
+  "active": "7779edebe91cc9c1",
   "lastOpenFiles": [
+    "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/Round Robin (RR).md",
+    "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/Scheduling Algorithms.md",
+    "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/First-Come, First-Served (FCFS) Scheduling.md",
+    "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/Priority Scheduling.md",
     "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/Shortest-Job-Next (SJN) Scheduling.md",
     "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/Shortest-Remaining-Time-First Scheduling.md",
-    "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/Scheduling Algorithms.md",
-    "Assets/Pasted image 20230803170832.png",
-    "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/First-Come, First-Served (FCFS) Scheduling.md",
+    "Operating Systems/5 CPU Scheduling/Dispatcher.md",
     "Operating Systems/5 CPU Scheduling/Determining Length of Next CPU Burst.md",
+    "Operating Systems/5 CPU Scheduling/CPU-IO Burst Cycle.md",
+    "Operating Systems/5 CPU Scheduling/CPU Scheduling.md",
+    "Operating Systems/5 CPU Scheduling/CPU Scheduler.md",
+    "Operating Systems/5 CPU Scheduling/Preemptive and Nonpreemptive Scheduling.md",
+    "Assets/Pasted image 20230808004908.png",
+    "Assets/Pasted image 20230808004215.png",
+    "Assets/Pasted image 20230803170832.png",
     "Assets/Pasted image 20230803170104.png",
     "Assets/Pasted image 20230803165409.png",
     "Assets/Pasted image 20230803165359.png",
     "Assets/Pasted image 20230803165234.png",
     "Assets/Pasted image 20230803165203.png",
     "Operating Systems/5 CPU Scheduling/Scheduling Algorithms",
-    "Operating Systems/5 CPU Scheduling/Preemptive and Nonpreemptive Scheduling.md",
-    "Operating Systems/5 CPU Scheduling/CPU Scheduling.md",
-    "Operating Systems/5 CPU Scheduling/CPU-IO Burst Cycle.md",
-    "Operating Systems/5 CPU Scheduling/CPU Scheduler.md",
     "Operating Systems/5 CPU Scheduling/Scheduling Criteria.md",
-    "Operating Systems/5 CPU Scheduling/Dispatcher.md",
     "Assets/Pasted image 20230803152434.png",
     "Operating Systems/3 Processes/Processes.md",
     "Assets/Pasted image 20230803151143.png",
@@ -211,9 +201,6 @@
     "Operating Systems/1 Introduction/Introduction.md",
     "Operating Systems/1 Introduction/Interrupt.md",
     "Operating Systems/0 Overview/Overview.md",
-    "Operating Systems/4 Threads & Concurrency/Multicore Programming.md",
-    "Assets/Pasted image 20230725092011.png",
-    "Assets/Pasted image 20230729135556.png",
     "Operating Systems/4 Threads & Concurrency",
     "Operating Systems/3 Processes",
     "Operating Systems/2 Operating System Services",
