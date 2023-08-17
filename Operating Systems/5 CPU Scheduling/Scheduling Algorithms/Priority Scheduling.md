@@ -1,3 +1,4 @@
+#preemptive #nonpreemptive 
 # Priority Scheduling
 
 - A priority number (integer) is associated with each process

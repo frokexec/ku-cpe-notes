@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/Priority Scheduling.md",
+                "file": "Data Communication/Digital Transmission-Practice Sets.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -70,7 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 210.5
   },
   "right": {
     "id": "f754d78f68a1ba10",
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/Priority Scheduling.md",
+                "file": "Data Communication/Digital Transmission-Practice Sets.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/Priority Scheduling.md",
+                "file": "Data Communication/Digital Transmission-Practice Sets.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/Priority Scheduling.md"
+                "file": "Data Communication/Digital Transmission-Practice Sets.md"
               }
             }
           },
@@ -163,44 +163,44 @@
   },
   "active": "7779edebe91cc9c1",
   "lastOpenFiles": [
-    "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/Round Robin (RR).md",
+    "Data Communication/Physical Layer-Practice Sets.md",
+    "Data Communication/Digital Transmission-Practice Sets.md",
+    "Data Communication/Introduction-Practice Sets.md",
+    "Data Communication/Network Models-Practice Set.md",
+    "Assets/Pasted image 20230817151227.png",
+    "Assets/Pasted image 20230817151041.png",
+    "Assets/Pasted image 20230817150804.png",
+    "Assets/Pasted image 20230817150512.png",
+    "Assets/Pasted image 20230817145533.png",
+    "Assets/Pasted image 20230817145530.png",
+    "Assets/Pasted image 20230817145508.png",
+    "Data Communication/04 Analog/Analog.md",
+    "Assets/Pasted image 20230817125155.png",
     "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/Scheduling Algorithms.md",
-    "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/First-Come, First-Served (FCFS) Scheduling.md",
-    "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/Priority Scheduling.md",
-    "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/Shortest-Job-Next (SJN) Scheduling.md",
-    "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/Shortest-Remaining-Time-First Scheduling.md",
-    "Operating Systems/5 CPU Scheduling/Dispatcher.md",
-    "Operating Systems/5 CPU Scheduling/Determining Length of Next CPU Burst.md",
-    "Operating Systems/5 CPU Scheduling/CPU-IO Burst Cycle.md",
-    "Operating Systems/5 CPU Scheduling/CPU Scheduling.md",
-    "Operating Systems/5 CPU Scheduling/CPU Scheduler.md",
-    "Operating Systems/5 CPU Scheduling/Preemptive and Nonpreemptive Scheduling.md",
-    "Assets/Pasted image 20230808004908.png",
-    "Assets/Pasted image 20230808004215.png",
-    "Assets/Pasted image 20230803170832.png",
-    "Assets/Pasted image 20230803170104.png",
-    "Assets/Pasted image 20230803165409.png",
-    "Assets/Pasted image 20230803165359.png",
-    "Assets/Pasted image 20230803165234.png",
-    "Assets/Pasted image 20230803165203.png",
-    "Operating Systems/5 CPU Scheduling/Scheduling Algorithms",
-    "Operating Systems/5 CPU Scheduling/Scheduling Criteria.md",
-    "Assets/Pasted image 20230803152434.png",
-    "Operating Systems/3 Processes/Processes.md",
-    "Assets/Pasted image 20230803151143.png",
-    "Operating Systems/1 Introduction/Multiprogramming & Multitasking.md",
-    "Operating Systems/3 Processes/Communications in Client-Server Systems.md",
-    "Operating Systems/5 CPU Scheduling",
-    "Operating Systems/4 Threads & Concurrency/Operating System Examples.md",
-    "Operating Systems/4 Threads & Concurrency/Threads & Concurrency.md",
-    "Operating Systems/4 Threads & Concurrency/Threading Issues.md",
-    "Operating Systems/4 Threads & Concurrency/Multithreading Models.md",
-    "Operating Systems/4 Threads & Concurrency/Implicit Threading.md",
-    "Operating Systems/1 Introduction/IO Structure.md",
-    "Operating Systems/2 Operating System Services/System Calls.md",
-    "Operating Systems/1 Introduction/Introduction.md",
-    "Operating Systems/1 Introduction/Interrupt.md",
     "Operating Systems/0 Overview/Overview.md",
+    "Operating Systems/3 Processes/Process Termination.md",
+    "Operating Systems/4 Threads & Concurrency/Multicore Programming.md",
+    "Operating Systems/4 Threads & Concurrency/Threads & Concurrency.md",
+    "Operating Systems/4 Threads & Concurrency/Thread Libraries.md",
+    "Operating Systems/4 Threads & Concurrency/Threading Issues.md",
+    "Operating Systems/4 Threads & Concurrency/Implicit Threading.md",
+    "Operating Systems/3 Processes/Interprocess Communication.md",
+    "Operating Systems/3 Processes/Processes.md",
+    "Operating Systems/3 Processes/Communications in Client-Server Systems.md",
+    "Operating Systems/3 Processes/Process Creation.md",
+    "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/Multilevel Queue.md",
+    "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/Shortest-Remaining-Time-First Scheduling.md",
+    "Operating Systems/5 CPU Scheduling/Scheduling Algorithms/Shortest-Job-Next (SJN) Scheduling.md",
+    "Operating Systems/5 CPU Scheduling/CPU Scheduling.md",
+    "Operating Systems/5 CPU Scheduling/CPU-IO Burst Cycle.md",
+    "Operating Systems/5 CPU Scheduling/CPU Scheduler.md",
+    "Operating Systems/4 Threads & Concurrency/Multithreading Models.md",
+    "Operating Systems/4 Threads & Concurrency/Lightweight Processes (LWPs).md",
+    "Operating Systems/5 CPU Scheduling/Thread Scheduling.md",
+    "Assets/Pasted image 20230808110629.png",
+    "Assets/Pasted image 20230808103625.png",
+    "Operating Systems/5 CPU Scheduling/Scheduling Algorithms",
+    "Operating Systems/5 CPU Scheduling",
     "Operating Systems/4 Threads & Concurrency",
     "Operating Systems/3 Processes",
     "Operating Systems/2 Operating System Services",

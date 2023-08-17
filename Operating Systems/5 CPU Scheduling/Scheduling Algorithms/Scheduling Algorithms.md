@@ -15,3 +15,7 @@ Many criteria have been suggested for comparing CPU-scheduling algorithms. Which
 - [[First-Come, First-Served (FCFS) Scheduling]]
 - [[Shortest-Job-Next (SJN) Scheduling]]
 - [[Shortest-Remaining-Time-First Scheduling]]
+- [[Priority Scheduling]]
+- [[Round Robin (RR)]]
+- [[Multilevel Queue]]
+- [[Multilevel Feedback Queue]]

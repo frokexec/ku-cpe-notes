@@ -1,3 +1,5 @@
+#preemptive
+
 # Round Robin (RR)
 
 - Each process gets a small unit of CPU time (time quantum q), usually 10-100 milliseconds. After this time has elapsed, the process is preempted and added to the end of the ready queue.
